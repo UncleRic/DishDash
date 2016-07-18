@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1844B0C91D3D5B8A00220818 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1844B0C81D3D5B8A00220818 /* README.md */; };
 		185798491D3C024900DFBD5D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185798371D3C024900DFBD5D /* Roboto-Black.ttf */; };
 		1857984A1D3C024900DFBD5D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185798381D3C024900DFBD5D /* Roboto-BlackItalic.ttf */; };
 		1857984B1D3C024900DFBD5D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185798391D3C024900DFBD5D /* Roboto-Bold.ttf */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1844B0C81D3D5B8A00220818 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		185798371D3C024900DFBD5D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		185798381D3C024900DFBD5D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		185798391D3C024900DFBD5D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		1892CC4A1D3AAE8A0081F6E6 = {
 			isa = PBXGroup;
 			children = (
+				1844B0C81D3D5B8A00220818 /* README.md */,
 				1892CC551D3AAE8A0081F6E6 /* ScrollView */,
 				1892CC541D3AAE8A0081F6E6 /* Products */,
 			);
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1844B0C91D3D5B8A00220818 /* README.md in Sources */,
 				1892CC591D3AAE8A0081F6E6 /* MainViewController.swift in Sources */,
 				1892CC571D3AAE8A0081F6E6 /* AppDelegate.swift in Sources */,
 			);
