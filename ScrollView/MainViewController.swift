@@ -6,6 +6,7 @@
 // -----------------------------------------------------------------------------------------------------
 
 import UIKit
+import QuickLook
 
 class MainViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -35,7 +36,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var page6Title1Label: UILabel!
     
     // MARK:
-    // MARK: - UIViewController methods
+    // MARK: UIViewController methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +106,24 @@ class MainViewController: UIViewController {
     
     // -----------------------------------------------------------------------------------------------------
     
+    func showCode() {
+        if Bundle.main.urlForResource("DishDash", withExtension: "pdf") != nil {
+            let preview = QLPreviewController()
+            preview.dataSource = self
+            preview.currentPreviewItemIndex = 0
+            self.present(preview, animated: true, completion: nil)
+        }
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // MARK: - Action methods
+    
+    @IBAction func tapGestureHandler(_ sender: UITapGestureRecognizer) {
+        showCode()
+    }
+    
+    // -----------------------------------------------------------------------------------------------------
+    
     @IBAction func exitAction(_ sender: UIBarButtonItem) {
         exit(0)
     }
@@ -121,6 +140,19 @@ extension MainViewController:UIScrollViewDelegate {
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         print("ScrollViewDidEndDragging")
+    }
+}
+
+// ===================================================================================================
+
+
+extension MainViewController:QLPreviewControllerDataSource {
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return 1
+    }
+    
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        return Bundle.main.urlForResource("DishDash", withExtension: "pdf")!
     }
 }
 

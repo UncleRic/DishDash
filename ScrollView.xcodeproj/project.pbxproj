@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182AA3CB1D481E7C006C6BA5 /* DishDash.pages in Resources */ = {isa = PBXBuildFile; fileRef = 182AA3C91D481E7C006C6BA5 /* DishDash.pages */; };
+		182AA3CC1D481E7C006C6BA5 /* DishDash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 182AA3CA1D481E7C006C6BA5 /* DishDash.pdf */; };
 		1844B0C91D3D5B8A00220818 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1844B0C81D3D5B8A00220818 /* README.md */; };
 		185798491D3C024900DFBD5D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185798371D3C024900DFBD5D /* Roboto-Black.ttf */; };
 		1857984A1D3C024900DFBD5D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185798381D3C024900DFBD5D /* Roboto-BlackItalic.ttf */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182AA3C91D481E7C006C6BA5 /* DishDash.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = DishDash.pages; sourceTree = "<group>"; };
+		182AA3CA1D481E7C006C6BA5 /* DishDash.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DishDash.pdf; sourceTree = "<group>"; };
 		1844B0C81D3D5B8A00220818 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		185798371D3C024900DFBD5D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		185798381D3C024900DFBD5D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -73,9 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182AA3CD1D481E90006C6BA5 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				182AA3C91D481E7C006C6BA5 /* DishDash.pages */,
+				182AA3CA1D481E7C006C6BA5 /* DishDash.pdf */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
 		185798351D3C022A00DFBD5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				182AA3CD1D481E90006C6BA5 /* Docs */,
 				185798361D3C024900DFBD5D /* RobotoTTF */,
 				1892CC5D1D3AAE8A0081F6E6 /* Assets.xcassets */,
 			);
@@ -210,7 +224,9 @@
 				185798531D3C024900DFBD5D /* Roboto-Thin.ttf in Resources */,
 				185798591D3C024900DFBD5D /* RobotoCondensed-LightItalic.ttf in Resources */,
 				1892CC611D3AAE8A0081F6E6 /* LaunchScreen.storyboard in Resources */,
+				182AA3CB1D481E7C006C6BA5 /* DishDash.pages in Resources */,
 				1892CC5E1D3AAE8A0081F6E6 /* Assets.xcassets in Resources */,
+				182AA3CC1D481E7C006C6BA5 /* DishDash.pdf in Resources */,
 				185798561D3C024900DFBD5D /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				185798571D3C024900DFBD5D /* RobotoCondensed-Italic.ttf in Resources */,
 				1857984F1D3C024900DFBD5D /* Roboto-LightItalic.ttf in Resources */,

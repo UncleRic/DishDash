@@ -242,6 +242,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.75012630219999998" green="1" blue="0.74478548769999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2QP-5i-jgv" firstAttribute="top" secondItem="vgC-Tn-Zsb" secondAttribute="bottom" constant="158" id="3TL-3z-d1m"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vgC-Tn-Zsb" secondAttribute="trailing" constant="-1" id="DA3-6T-8Z8"/>
@@ -250,6 +251,9 @@
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="top" secondItem="OuK-7r-FYK" secondAttribute="bottom" constant="5" id="cTN-pg-JCu"/>
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="top" secondItem="63o-Kj-C8A" secondAttribute="top" constant="69" id="w89-mf-T6m"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Cbb-au-bIQ" appends="YES" id="xYy-Bi-SNa"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="3SV-LG-VYy">
                         <barButtonItem key="leftBarButtonItem" title="Exit" id="ro9-7v-H78">
@@ -276,8 +280,31 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Cbb-au-bIQ">
+                    <connections>
+                        <action selector="tapGestureHandler:" destination="BYZ-38-t0r" id="xPc-Ax-quo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="MNH-0J-yAx">
+            <objects>
+                <viewController id="2Nh-ja-oS0" customClass="InfoViewController" customModule="DishDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QR2-dI-Tzz"/>
+                        <viewControllerLayoutGuide type="bottom" id="D41-xh-nMq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ohc-OB-Zxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JL5-ak-yDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mtM-aa-w7R">
