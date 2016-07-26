@@ -102,6 +102,13 @@ class MainViewController: UIViewController {
         attrString3.append(with3)
         page5Title1Label.attributedText = attrString3
     }
+    
+    // -----------------------------------------------------------------------------------------------------
+    
+    @IBAction func exitAction(_ sender: UIBarButtonItem) {
+        exit(0)
+    }
+    
 }
 
 // ===================================================================================================

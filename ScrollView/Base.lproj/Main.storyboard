@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9HK-kx-dLP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9HK-kx-dLP">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,7 +106,8 @@
                                                             <constraint firstAttribute="height" constant="200" id="DJI-cv-syp"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-8b-iuc" userLabel="Title Stack">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-8b-iuc" userLabel="Title Stack">
+                                                        <frame key="frameInset" minX="25" minY="211" width="153" height="60"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Breast with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-1H-elV" userLabel="Chicken Breast with">
                                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
@@ -250,7 +251,13 @@
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="top" secondItem="63o-Kj-C8A" secondAttribute="top" constant="69" id="w89-mf-T6m"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3SV-LG-VYy"/>
+                    <navigationItem key="navigationItem" id="3SV-LG-VYy">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="ro9-7v-H78">
+                            <connections>
+                                <action selector="exitAction:" destination="BYZ-38-t0r" id="k4A-ec-0Vc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="page1Title1Label" destination="YnQ-2z-QAw" id="a3u-jt-rSM"/>
