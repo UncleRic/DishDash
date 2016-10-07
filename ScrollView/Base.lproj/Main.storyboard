@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9HK-kx-dLP">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9HK-kx-dLP">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,8 +106,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="DJI-cv-syp"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-8b-iuc" userLabel="Title Stack">
-                                                        <frame key="frameInset" minX="25" minY="211" width="153" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-8b-iuc" userLabel="Title Stack">
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Breast with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-1H-elV" userLabel="Chicken Breast with">
                                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
@@ -131,8 +130,8 @@
                                                     <constraint firstItem="toG-7I-YCz" firstAttribute="leading" secondItem="b8h-W6-FVA" secondAttribute="leading" id="lLH-qO-sh5"/>
                                                     <constraint firstItem="iBf-8b-iuc" firstAttribute="top" secondItem="toG-7I-YCz" secondAttribute="bottom" constant="11" id="pZa-B3-I06"/>
                                                     <constraint firstItem="toG-7I-YCz" firstAttribute="top" secondItem="b8h-W6-FVA" secondAttribute="top" id="vgw-RC-8TK"/>
-                                                    <constraint firstItem="iBf-8b-iuc" firstAttribute="centerX" secondItem="b8h-W6-FVA" secondAttribute="centerX" id="xgc-Su-YF9"/>
-                                                    <constraint firstItem="toG-7I-YCz" firstAttribute="centerX" secondItem="iBf-8b-iuc" secondAttribute="centerX" id="xsm-Z3-GaJ"/>
+                                                    <constraint firstItem="iBf-8b-iuc" firstAttribute="centerX" secondItem="b8h-W6-FVA" secondAttribute="centerX" constant="1.5" id="xgc-Su-YF9"/>
+                                                    <constraint firstItem="toG-7I-YCz" firstAttribute="centerX" secondItem="iBf-8b-iuc" secondAttribute="centerX" constant="-1.5" id="xsm-Z3-GaJ"/>
                                                 </constraints>
                                                 <metadata>
                                                     <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUIView</string>
@@ -233,7 +232,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="FHQ-Lv-6Pb" secondAttribute="trailing" id="6D6-iE-EXc"/>
+                                    <constraint firstAttribute="trailing" secondItem="FHQ-Lv-6Pb" secondAttribute="trailing" constant="-840" id="6D6-iE-EXc"/>
                                     <constraint firstAttribute="bottom" secondItem="FHQ-Lv-6Pb" secondAttribute="bottom" constant="20" id="CyA-nJ-XYV"/>
                                     <constraint firstItem="FHQ-Lv-6Pb" firstAttribute="leading" secondItem="vgC-Tn-Zsb" secondAttribute="leading" id="KCo-tP-0gz"/>
                                     <constraint firstItem="FHQ-Lv-6Pb" firstAttribute="top" secondItem="vgC-Tn-Zsb" secondAttribute="top" constant="20" id="Yg8-jD-5pN"/>
@@ -245,8 +244,8 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2QP-5i-jgv" firstAttribute="top" secondItem="vgC-Tn-Zsb" secondAttribute="bottom" constant="158" id="3TL-3z-d1m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vgC-Tn-Zsb" secondAttribute="trailing" constant="-1" id="DA3-6T-8Z8"/>
-                            <constraint firstItem="vgC-Tn-Zsb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="V5J-Kl-FiG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vgC-Tn-Zsb" secondAttribute="trailing" constant="-5" id="DA3-6T-8Z8"/>
+                            <constraint firstItem="vgC-Tn-Zsb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="V5J-Kl-FiG"/>
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="leading" secondItem="63o-Kj-C8A" secondAttribute="leading" id="aet-45-AB7"/>
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="top" secondItem="OuK-7r-FYK" secondAttribute="bottom" constant="5" id="cTN-pg-JCu"/>
                             <constraint firstItem="vgC-Tn-Zsb" firstAttribute="top" secondItem="63o-Kj-C8A" secondAttribute="top" constant="69" id="w89-mf-T6m"/>

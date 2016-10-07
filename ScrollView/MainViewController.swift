@@ -7,6 +7,7 @@
 
 import UIKit
 import QuickLook
+import Foundation
 
 class MainViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -107,7 +108,7 @@ class MainViewController: UIViewController {
     // -----------------------------------------------------------------------------------------------------
     
     func showCode() {
-        if Bundle.main.urlForResource("DishDash", withExtension: "pdf") != nil {
+        if (nil != Bundle.main.url(forResource: "DishDash", withExtension: "pdf")) {
             let preview = QLPreviewController()
             preview.dataSource = self
             preview.currentPreviewItemIndex = 0
@@ -152,7 +153,7 @@ extension MainViewController:QLPreviewControllerDataSource {
     }
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        return Bundle.main.urlForResource("DishDash", withExtension: "pdf")!
+        return Bundle.main.url(forResource: "DishDash", withExtension: "pdf")! as QLPreviewItem
     }
 }
 
@@ -160,22 +161,18 @@ extension MainViewController:QLPreviewControllerDataSource {
 // MARK:
 
 extension NSMutableAttributedString {
-    class func robotoLight(str:String) -> AttributedString {
-        let myString = str ?? " "
-        
+    class func robotoLight(str:String) -> NSAttributedString {
         let labelFont = UIFont(name: "Roboto-Light", size: 17.0)
-        let attributes :[String:AnyObject] = [NSFontAttributeName : labelFont!]
-        let attrString = AttributedString(string:myString, attributes: attributes)
+        let attributes = [NSFontAttributeName : labelFont!]
+        let attrString = NSAttributedString(string:str, attributes: attributes)
         
         return attrString
     }
     
-    class func robotoBold(str:String) -> AttributedString {
-        let myString = str ?? " "
-        
+    class func robotoBold(str:String) -> NSAttributedString {
         let labelFont = UIFont(name: "Roboto-Bold", size: 17.0)
         let attributes :[String:AnyObject] = [NSFontAttributeName : labelFont!]
-        let attrString = AttributedString(string:myString, attributes: attributes)
+        let attrString = NSAttributedString(string:str, attributes: attributes)
         
         return attrString
     }
